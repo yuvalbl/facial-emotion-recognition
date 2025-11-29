@@ -217,7 +217,5 @@ __marimo__/
 
 # our ignores
 kaggle.json
-/data/fer_dataset
-data/test
-/data/train
-/data/val
+/data/*
+/models/*
