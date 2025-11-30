@@ -32,17 +32,29 @@ The goal of the project is to accurately classify facial expressions into predef
 
 ### Clone the repo
 ```bash
-git clone https://github.com/<your-org>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/yuvalbl/facial-emotion-recognition.git
+cd facial-emotion-recognition
 ```
 
 ### Install dependencies
 ```bash
+python -m venv .venv
+source ./.venv/bin/activate  # on unix and mac
 pip install -r requirements.txt
 ```
 
 ### Getting data
-to download dataset from Kaggle run the data_prep notebook
+to download dataset from Kaggle run the data_prep notebook, this should create a data folder with `fer_dataset` in it.
+
+---
+
+### Run the inference notebook
+
+To run `notebooks/inference.ipynb`, first download our trained model weights from the Hugging Face Hub:
+
+```bash
+pip install -U huggingface_hub
+```
 
 ---
 
